@@ -37,4 +37,7 @@ Dự án xây dựng lớp `StudentAnalyzer` để xử lý điểm số học s
 ## 4. Hướng dẫn chạy
 1. Mở dự án bằng VS Code hoặc IntelliJ.
 2. Đảm bảo đã cài đặt thư viện JUnit 5.
-3. Chạy file `test/StudentAnalyzerTest.java`.
+3. Chạy file
+
+<img width="417" height="550" alt="c61eee1a-8ac0-4075-97e7-910923cbfb56" src="https://github.com/user-attachments/assets/2afd1779-21a7-4fb1-8431-1ed232ff104f" />
+ `test/StudentAnalyzerTest.java`.
