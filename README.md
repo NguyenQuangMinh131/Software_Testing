@@ -1,6 +1,21 @@
-# Software_Testing
-Bài 1: <img width="1045" height="464" alt="image" src="https://github.com/user-attachments/assets/54ff866d-b693-440f-986a-c4ffc2a2fe0d" />
+# 🎨 Báo cáo Thực hành Kiểm thử Giao diện (UI Testing)
 
+> **Chủ đề:** Rèn luyện tư duy thiết kế và kiểm thử giao diện người dùng qua "Can't Unsee".
+> **Công cụ thực hiện:** [Can't Unsee](https://cantunsee.space/)
+> **Trạng thái:** ✅ Đã hoàn thành
+
+## 🏆 Kết quả đạt được
+
+Hệ thống đã ghi nhận kết quả hoàn thành bài thi với các chỉ số chi tiết như sau:
+
+* **Tổng điểm (Score):** `6430`
+* **Thời gian hoàn thành:** `00:15:58`
+
+
+<img width="1045" height="464" alt="image" src="https://github.com/user-attachments/assets/54ff866d-b693-440f-986a-c4ffc2a2fe0d" />
+
+---
+*Bài tập thực hành môn Kiểm thử phần mềm - 2026*
 # Bài tập Kiểm thử Đơn vị (Unit Test) - StudentAnalyzer
 
 ## 1. Thông tin sinh viên
