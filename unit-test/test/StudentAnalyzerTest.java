@@ -8,45 +8,43 @@ public class StudentAnalyzerTest {
 
     private final StudentAnalyzer analyzer = new StudentAnalyzer();
 
-
-
     @Test
-    public void testCountExcellentStudents_NormalCase() {
-        List<Double> scores = Arrays.asList(9.0, 8.5, 7.0, 11.0, -1.0, 5.0);
-        assertEquals(2, analyzer.countExcellentStudents(scores));
-    }
-
-    @Test
-    public void testCountExcellentStudents_AllExcellent() {
-        assertEquals(3, analyzer.countExcellentStudents(Arrays.asList(8.0, 9.5, 10.0)));
-    }
-
-    @Test
-    public void testCountExcellentStudents_EmptyList() {
-        assertEquals(0, analyzer.countExcellentStudents(Collections.emptyList()));
-    }
-    
-    @Test
-    public void testCountExcellentStudents_NullList() {
+    public void testStructure_NullOrEmptyInput() {
         assertEquals(0, analyzer.countExcellentStudents(null));
-    }
-
-
-    @Test
-    public void testCalculateValidAverage_NormalCase() {
-        List<Double> scores = Arrays.asList(9.0, 8.0, -5.0, 15.0);
-        assertEquals(8.5, analyzer.calculateValidAverage(scores), 0.01);
+        assertEquals(0, analyzer.countExcellentStudents(Collections.emptyList()));
+        
+        assertEquals(0.0, analyzer.calculateValidAverage(null), 0.01);
+        assertEquals(0.0, analyzer.calculateValidAverage(Collections.emptyList()), 0.01);
     }
 
     @Test
-    public void testCalculateValidAverage_BoundaryValues() {
-        List<Double> scores = Arrays.asList(0.0, 10.0);
-        assertEquals(5.0, analyzer.calculateValidAverage(scores), 0.01);
+    public void testPartition_InvalidValues_Ignored() {
+        List<Double> dirtyData = Arrays.asList(
+            -0.0001,
+            10.0001,
+            Double.NaN,
+            Double.POSITIVE_INFINITY,
+            Double.NEGATIVE_INFINITY,
+            null
+        );
+
+        assertEquals(0, analyzer.countExcellentStudents(dirtyData));
+        assertEquals(0.0, analyzer.calculateValidAverage(dirtyData), 0.01);
     }
 
     @Test
-    public void testCalculateValidAverage_NoValidScores() {
-        List<Double> scores = Arrays.asList(-1.0, 20.0);
-        assertEquals(0.0, analyzer.calculateValidAverage(scores), 0.01);
+    public void testPartition_ValidAndBoundaries() {
+        List<Double> scores = Arrays.asList(0.0, 7.99, 8.0, 10.0);
+
+        assertEquals(2, analyzer.countExcellentStudents(scores));
+        assertEquals(6.4975, analyzer.calculateValidAverage(scores), 0.0001);
+    }
+
+    @Test
+    public void testScenario_MixedRealWorld() {
+        List<Double> scores = Arrays.asList(9.0, null, 5.0, Double.NaN, -1.0);
+
+        assertEquals(1, analyzer.countExcellentStudents(scores));
+        assertEquals(7.0, analyzer.calculateValidAverage(scores), 0.01);
     }
 }
