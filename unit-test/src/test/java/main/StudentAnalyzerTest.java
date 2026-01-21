@@ -1,4 +1,7 @@
+package main;
+
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,7 +15,6 @@ public class StudentAnalyzerTest {
     public void testStructure_NullOrEmptyInput() {
         assertEquals(0, analyzer.countExcellentStudents(null));
         assertEquals(0, analyzer.countExcellentStudents(Collections.emptyList()));
-        
         assertEquals(0.0, analyzer.calculateValidAverage(null), 0.01);
         assertEquals(0.0, analyzer.calculateValidAverage(Collections.emptyList()), 0.01);
     }
@@ -20,13 +22,12 @@ public class StudentAnalyzerTest {
     @Test
     public void testPartition_InvalidValues_Ignored() {
         List<Double> dirtyData = Arrays.asList(
-            -0.0001,
-            10.0001,
-            Double.NaN,
-            Double.POSITIVE_INFINITY,
-            Double.NEGATIVE_INFINITY,
-            null
-        );
+                -0.0001,
+                10.0001,
+                Double.NaN,
+                Double.POSITIVE_INFINITY,
+                Double.NEGATIVE_INFINITY,
+                null);
 
         assertEquals(0, analyzer.countExcellentStudents(dirtyData));
         assertEquals(0.0, analyzer.calculateValidAverage(dirtyData), 0.01);
