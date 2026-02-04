@@ -41,3 +41,29 @@ Dự án xây dựng lớp `StudentAnalyzer` để xử lý điểm số học s
 
 <img width="417" height="550" alt="c61eee1a-8ac0-4075-97e7-910923cbfb56" src="https://github.com/user-attachments/assets/2afd1779-21a7-4fb1-8431-1ed232ff104f" />
 
+
+---
+# Báo cáo Bài tập: Kiểm thử hiệu năng với JMeter
+
+**Sinh viên:** Nguyễn Quang Minh - BCS230057
+**Website kiểm thử:** Wikipedia (https://www.wikipedia.org)
+
+## 1. Thiết lập kịch bản (Test Plan)
+Tôi đã thiết lập 3 kịch bản kiểm thử (Thread Groups) theo yêu cầu:
+1.  **Basic Test:** 10 Users, lặp 5 lần. Kiểm tra truy cập trang chủ.
+2.  **Heavy Load:** 20 Users, Ramp-up 30s. Kiểm tra khả năng chịu tải khi truy cập trang chủ và trang tìm kiếm.
+3.  **Duration Test:** 20 Users, chạy liên tục trong 60 giây. Kiểm tra độ ổn định theo thời gian.
+
+*Kỹ thuật áp dụng:* Sử dụng **HTTP Header Manager** để giả lập trình duyệt Chrome (User-Agent), giúp vượt qua cơ chế chặn bot của Wikipedia.
+
+## 2. Kết quả thực nghiệm
+- **Tổng số mẫu thử (Samples):** 137 requests.
+- **Tỷ lệ lỗi (Error Rate):** 0.00% (Thành công tuyệt đối).
+- **Thông lượng (Throughput):** ~1.7 requests/giây.
+- **Thời gian phản hồi trung bình:** ~8 giây (Do kết nối đến máy chủ quốc tế).
+
+## 3. Minh chứng
+Dưới đây là ảnh chụp màn hình kết quả chạy thực tế trên JMeter:
+
+![Ket qua test]()
+
