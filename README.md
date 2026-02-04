@@ -65,6 +65,5 @@ Tôi đã thiết lập 3 kịch bản kiểm thử (Thread Groups) theo yêu c�
 ## 3. Minh chứng
 Dưới đây là ảnh chụp màn hình kết quả chạy thực tế trên JMeter:
 
-![Ket qua test](<img width="1528" height="857" alt="ketquatest" src="https://github.com/user-attachments/assets/dd1c268e-e23a-40e7-a099-89eaa3b7bbf8" />
-)
+<img width="1528" height="857" alt="ketquatest" src="https://github.com/user-attachments/assets/6d510f44-c726-4c3c-803d-70ab6ac74bbe" />
 
