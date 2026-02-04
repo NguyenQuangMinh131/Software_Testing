@@ -1,4 +1,4 @@
-# 🎨 Báo cáo Thực hành Kiểm thử Giao diện (UI Testing)
+<img width="1528" height="857" alt="ketquatest" src="https://github.com/user-attachments/assets/a6b3287c-8888-4e91-b0ec-4c69833d0ea0" /># 🎨 Báo cáo Thực hành Kiểm thử Giao diện (UI Testing)
 
 > **Chủ đề:** Rèn luyện tư duy thiết kế và kiểm thử giao diện người dùng qua "Can't Unsee".
 > **Công cụ thực hiện:** [Can't Unsee](https://cantunsee.space/)
@@ -65,5 +65,6 @@ Tôi đã thiết lập 3 kịch bản kiểm thử (Thread Groups) theo yêu c�
 ## 3. Minh chứng
 Dưới đây là ảnh chụp màn hình kết quả chạy thực tế trên JMeter:
 
-![Ket qua test]()
+![Ket qua test](<img width="1528" height="857" alt="ketquatest" src="https://github.com/user-attachments/assets/dd1c268e-e23a-40e7-a099-89eaa3b7bbf8" />
+)
 
