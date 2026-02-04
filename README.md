@@ -1,4 +1,4 @@
-<img width="1528" height="857" alt="ketquatest" src="https://github.com/user-attachments/assets/a6b3287c-8888-4e91-b0ec-4c69833d0ea0" /># 🎨 Báo cáo Thực hành Kiểm thử Giao diện (UI Testing)
+# 🎨 Báo cáo Thực hành Kiểm thử Giao diện (UI Testing)
 
 > **Chủ đề:** Rèn luyện tư duy thiết kế và kiểm thử giao diện người dùng qua "Can't Unsee".
 > **Công cụ thực hiện:** [Can't Unsee](https://cantunsee.space/)
